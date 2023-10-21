@@ -1,6 +1,8 @@
-@use "sass:math";
-
-// convert px to rem units
-@function pxToRem($px, $rem: 16) {
-  @return math.div($px, $rem) * 1rem;
-}
+$primary-color: #009379;
+$primary-radius: 2rem;
+$primary-black: #000;
+$secondary-black: #2D2D2D;
+$star-color: #F8D57E;
+$neutral-color-light: #374151;
+$neutral-color-dark: #111827;
+$primary-font: 'Poppins', sans-serif;

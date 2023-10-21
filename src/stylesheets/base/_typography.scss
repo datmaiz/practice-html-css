@@ -1,0 +1,17 @@
+@use '../abstracts/' as *;
+
+@font-face {
+  font-family: 'Poppins';
+  src:
+    url("../assets/fonts/Poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  font-size: 2rem;
+}
