@@ -40,7 +40,7 @@
     .link {
       gap: 8px;
       background-color: $primary-color;
-      color: #fff;
+      color: $white;
       border-radius: $primary-radius;
     }
   }
@@ -92,7 +92,7 @@
 
     .button:last-child:hover {
       background-color: $primary-color;
-      color: #fff;
+      color: $white;
     }
   }
 
@@ -110,3 +110,5 @@
     }
   }
 }
+
+// end of footer
