@@ -1,0 +1,41 @@
+@use '../../abstracts' as *;
+
+.metrics {
+  padding: 12rem 5.5rem;
+}
+
+.metrics-wrapper {
+  .metrics-title {
+    @include font(3.8rem, 700);
+    text-align: center;
+  }
+
+  .metrics-desc {
+    @include font(1.6rem, 400);
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .metrics-cards {
+    @include grid-resp(4, 3rem, 20rem);
+    margin-top: 6rem;
+  }
+
+  .metrics-card {
+    padding: 4.8rem 1.6rem;
+    flex-direction: column;
+    border-bottom: 4px solid $metrics-card-border;
+    text-align: center;
+    box-shadow: 34px 29px 48px 0px $box-shadow-color;
+
+    .metrics-card-number {
+      @include font(3.8rem, 700);
+      line-height: 4.9rem;
+    }
+
+    .metrics-card-label {
+      @include font(1.6rem, 400);
+      margin-top: 5px;
+    }
+  }
+}
