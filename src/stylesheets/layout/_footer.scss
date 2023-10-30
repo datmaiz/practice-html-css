@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+
+.footer {
+  background-color: $secondary-black;
+  padding: 2.4rem 6rem;
+
+  * {
+    color: $white;
+  }
+}
+
+.footer-wrapper {
+  @include between;
+
+  .footer-info {
+    @include font(1.4rem, 400);
+  }
+
+  .footer-socials {
+    @include center-vertical(1.6rem);
+  }
+}
+
+// end

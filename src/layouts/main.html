@@ -133,82 +133,40 @@
         See how our landing page ui kit is making an impact.
       </p>
       <article class="testi-cards">
-        <div class="testi-card">
-          <div class="testi-info">
-            <figure class="testi-card-img">
-              <img
-                src="../assets/images/desktop/photo1_testimonials.png"
-                alt="avt"
-              />
-            </figure>
-            <h4 class="testi-card-name">Sarah K.</h4>
-            <p class="testi-card-position">UX Designer @Brello</p>
-          </div>
-          <div class="testi-more">
-            <p class="testi-card-cmt">
-              "I was looking for a way to streamline my design process and the
-              Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-              and ease of customisation have saved me hours of time and effort.
-              Highly recommend!"
-            </p>
-            <div class="stars">
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <figure class="testi-card-img">
-            <img
-              src="../assets/images/desktop/photo2_testimonials.png"
-              alt="avt"
-            />
-          </figure>
-          <h4 class="testi-card-name">Michael L.</h4>
-          <p class="testi-card-position">Creative Director @Yo</p>
-          <p class="testi-card-cmt">
-            “The Landing Page UI Kit has been a game changer for my agency. The
-            pre-designed components and templates have helped us deliver
-            projects faster and with more consistency. Great job!"
-          </p>
-          <div class="stars">
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIconEmpty.svg" alt="star" />
-          </div>
-        </div>
-        <div class="testi-card">
-          <figure class="testi-card-img">
-            <img
-              src="../assets/images/desktop/photo3_testimonials.png"
-              alt="avt"
-            />
-          </figure>
-          <h4 class="testi-card-name">Sarah K.</h4>
-          <p class="testi-card-position">UX Designer @Brello</p>
-          <p class="testi-card-cmt">
-            "I was looking for a way to streamline my design process and the
-            Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-            and ease of customisation have saved me hours of time and effort.
-            Highly recommend!"
-          </p>
-          <div class="stars">
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-          </div>
-        </div>
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Sarah K.",
+          "position": "UX Designer @Brello",
+          "cmt": "I was looking for a way to streamline my design process and the Anima’s Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!",
+          "img": "photo1_testimonials.png"
+        }'
+        ></include>
+
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Michael L.",
+          "position": "Creative Director @Yo",
+          "cmt": "The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped deliver projects faster and with more consistency. Great job!",
+          "img": "photo2_testimonials.png"
+        }'
+        ></include>
+
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Lauren M.",
+          "position": "UI Designer @Boo",
+          "cmt": "I was looking for a way to streamline my design process and the Anima Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!",
+          "img": "photo3_testimonials.png"
+        }'
+        ></include>
       </article>
     </div>
   </section>
 
+  <!-- pricing -->
   <section class="pricing">
     <div class="pricing-wrapper">
       <h2 class="pricing-title">Pick Your Perfect Plan</h2>
@@ -217,123 +175,32 @@
         options.
       </p>
       <article class="pricing-cards">
-        <div class="pricing-card">
-          <span class="pricing-card-level">Free</span>
-          <h3 class="pricing-card-cost">
-            <span class="number">$0</span>
-            <span class="text">/month</span>
-          </h3>
-          <p class="pricing-card-desc">Best for Small Teams or Individuals.</p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <button class="pricing-card-btn">
-            Get Started
-            <img src="../assets/icons/arrowRight.svg" alt="arrow" />
-          </button>
-        </div>
-        <div class="pricing-card">
-          <span class="pricing-card-level">Professional</span>
-          <h3 class="pricing-card-cost">
-            <span class="number">$19</span>
-            <span class="text">/month</span>
-          </h3>
-          <p class="pricing-card-desc">Ideal for Growing Companies.</p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <button class="pricing-card-btn">
-            Get Started
-            <img src="../assets/icons/arrowRight.svg" alt="arrow" />
-          </button>
-        </div>
-        <div class="pricing-card">
-          <span class="pricing-card-level">Enterprise</span>
-          <h3 class="pricing-card-cost">
-            <span class="number">$49</span>
-            <span class="text">/month</span>
-          </h3>
-          <p class="pricing-card-desc">Ultimate for Enterprise Solutions.</p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <button class="pricing-card-btn">
-            Get Started
-            <img src="../assets/icons/arrowRight.svg" alt="arrow" />
-          </button>
-        </div>
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Free",
+          "number": "0",
+          "desc": "Best for Small Teams or Individuals."
+        }'
+        ></include>
+
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Professional",
+          "number": "19",
+          "desc": "Ideal for Growing Companies."
+        }'
+        ></include>
+
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Enterprise",
+          "number": "49",
+          "desc": "Ultimate for Enterprise Solutions."
+        }'
+        ></include>
       </article>
     </div>
   </section>
@@ -347,48 +214,32 @@
         drive us.
       </p>
       <article class="team-cards">
-        <div class="team-card">
-          <figure class="team-card-img">
-            <img src="../assets/images/desktop/photo1_team.jpg" alt="team" />
-          </figure>
-          <div class="team-card-info">
-            <h3 class="team-card-name">Sarah K.</h3>
-            <p class="team-card-position">UX Designer</p>
-          </div>
-          <div class="team-card-socials">
-            <img src="../assets/icons/twetter.svg" alt="socials" />
-            <img src="../assets/icons/basketball.svg" alt="socials" />
-            <img src="../assets/icons/instagram.svg" alt="socials" />
-          </div>
-        </div>
-        <div class="team-card">
-          <figure class="team-card-img">
-            <img src="../assets/images/desktop/photo2_team.jpg" alt="team" />
-          </figure>
-          <div class="team-card-info">
-            <h3 class="team-card-name">Michael L.</h3>
-            <p class="team-card-position">Lead Designer</p>
-          </div>
-          <div class="team-card-socials">
-            <img src="../assets/icons/twetter.svg" alt="socials" />
-            <img src="../assets/icons/basketball.svg" alt="socials" />
-            <img src="../assets/icons/instagram.svg" alt="socials" />
-          </div>
-        </div>
-        <div class="team-card">
-          <figure class="team-card-img">
-            <img src="../assets/images/desktop/photo3_team.jpg" alt="team" />
-          </figure>
-          <div class="team-card-info">
-            <h3 class="team-card-name">Lauren M.</h3>
-            <p class="team-card-position">Product Designer</p>
-          </div>
-          <div class="team-card-socials">
-            <img src="../assets/icons/twetter.svg" alt="socials" />
-            <img src="../assets/icons/basketball.svg" alt="socials" />
-            <img src="../assets/icons/instagram.svg" alt="socials" />
-          </div>
-        </div>
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Sarah K.",
+          "position": "UX Designer",
+          "img": "photo1_team.jpg"
+        }'
+        ></include>
+
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Michael L.",
+          "position": "Lead Designer",
+          "img": "photo2_team.jpg"
+        }'
+        ></include>
+
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Lauren M.",
+          "position": "Product Designer",
+          "img": "photo3_team.jpg"
+        }'
+        ></include>
       </article>
     </div>
   </section>
@@ -423,4 +274,52 @@
       </figure>
     </div>
   </section>
+
+  <!-- contact form -->
+  <section class="contact">
+    <div class="contact-wrapper">
+      <h2 class="contact-title">Let’s get in touch!</h2>
+      <p class="contact-decs">
+        Got questions about the Landing Page UI Kit? Our team is here to help.
+        Contact us for quick and friendly support.
+      </p>
+      <div class="contact-info">
+        <article class="left">
+          <div class="details">
+            <p class="item">
+              <img src="../assets/icons/phoneCall.svg" alt="call" />
+              <span>+012 345 6789</span>
+            </p>
+            <p class="item">
+              <img src="../assets/icons/letter.svg" alt="call" />
+              <span>Hello@animaapp.com</span>
+            </p>
+          </div>
+          <div>
+            <h3 class="title">Connect with us</h3>
+            <span class="socials">
+              <img src="../assets/icons/instagram.svg" alt="socials" />
+              <img src="../assets/icons/basketball.svg" alt="socials" />
+              <img src="../assets/icons/beicon.svg" alt="socials" />
+              <img src="../assets/icons/twetter.svg" alt="Solutions" />
+            </span>
+          </div>
+        </article>
+        <article class="right">
+          <div class="input">
+            <img src="../assets/icons/user.svg" alt="input" />
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <div class="input">
+            <img src="../assets/icons/letter.svg" alt="input" />
+            <input type="text" placeholder="Email" />
+          </div>
+          <button type="button">Submit</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <include src="./layouts/footer.html"></include>
 </main>
