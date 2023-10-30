@@ -124,4 +124,84 @@
       </div>
     </div>
   </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="testimonials-wrapper">
+      <h2 class="testi-title">Real Stories from Satisfied Customers</h2>
+      <p class="testi-desc">
+        See how our landing page ui kit is making an impact.
+      </p>
+      <article class="testi-cards">
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Sarah K.",
+          "position": "UX Designer @Brello",
+          "cmt": "I was looking for a way to streamline my design process and the Anima’s Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!",
+          "img": "photo1_testimonials.png"
+        }'
+        ></include>
+
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Michael L.",
+          "position": "Creative Director @Yo",
+          "cmt": "The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped deliver projects faster and with more consistency. Great job!",
+          "img": "photo2_testimonials.png"
+        }'
+        ></include>
+
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Lauren M.",
+          "position": "UI Designer @Boo",
+          "cmt": "I was looking for a way to streamline my design process and the Anima Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!",
+          "img": "photo3_testimonials.png"
+        }'
+        ></include>
+      </article>
+    </div>
+  </section>
+
+  <!-- pricing -->
+  <section class="pricing">
+    <div class="pricing-wrapper">
+      <h2 class="pricing-title">Pick Your Perfect Plan</h2>
+      <p class="pricing-desc">
+        Find the perfect plan for your business with our flexible pricing
+        options.
+      </p>
+      <article class="pricing-cards">
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Free",
+          "number": "0",
+          "desc": "Best for Small Teams or Individuals."
+        }'
+        ></include>
+
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Professional",
+          "number": "19",
+          "desc": "Ideal for Growing Companies."
+        }'
+        ></include>
+
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Enterprise",
+          "number": "49",
+          "desc": "Ultimate for Enterprise Solutions."
+        }'
+        ></include>
+      </article>
+    </div>
+  </section>
 </main>
