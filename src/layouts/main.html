@@ -133,82 +133,40 @@
         See how our landing page ui kit is making an impact.
       </p>
       <article class="testi-cards">
-        <div class="testi-card">
-          <div class="testi-info">
-            <figure class="testi-card-img">
-              <img
-                src="../assets/images/desktop/photo1_testimonials.png"
-                alt="avt"
-              />
-            </figure>
-            <h4 class="testi-card-name">Sarah K.</h4>
-            <p class="testi-card-position">UX Designer @Brello</p>
-          </div>
-          <div class="testi-more">
-            <p class="testi-card-cmt">
-              "I was looking for a way to streamline my design process and the
-              Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-              and ease of customisation have saved me hours of time and effort.
-              Highly recommend!"
-            </p>
-            <div class="stars">
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-              <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            </div>
-          </div>
-        </div>
-        <div class="testi-card">
-          <figure class="testi-card-img">
-            <img
-              src="../assets/images/desktop/photo2_testimonials.png"
-              alt="avt"
-            />
-          </figure>
-          <h4 class="testi-card-name">Michael L.</h4>
-          <p class="testi-card-position">Creative Director @Yo</p>
-          <p class="testi-card-cmt">
-            “The Landing Page UI Kit has been a game changer for my agency. The
-            pre-designed components and templates have helped us deliver
-            projects faster and with more consistency. Great job!"
-          </p>
-          <div class="stars">
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIconEmpty.svg" alt="star" />
-          </div>
-        </div>
-        <div class="testi-card">
-          <figure class="testi-card-img">
-            <img
-              src="../assets/images/desktop/photo3_testimonials.png"
-              alt="avt"
-            />
-          </figure>
-          <h4 class="testi-card-name">Sarah K.</h4>
-          <p class="testi-card-position">UX Designer @Brello</p>
-          <p class="testi-card-cmt">
-            "I was looking for a way to streamline my design process and the
-            Anima’s Landing Page UI Kit was a lifesaver! The intuitive design
-            and ease of customisation have saved me hours of time and effort.
-            Highly recommend!"
-          </p>
-          <div class="stars">
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-            <img src="../assets/icons/starIcon_fill.svg" alt="star" />
-          </div>
-        </div>
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Sarah K.",
+          "position": "UX Designer @Brello",
+          "cmt": "I was looking for a way to streamline my design process and the Anima’s Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!",
+          "img": "photo1_testimonials.png"
+        }'
+        ></include>
+
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Michael L.",
+          "position": "Creative Director @Yo",
+          "cmt": "The Landing Page UI Kit has been a game changer for my agency. The pre-designed components and templates have helped deliver projects faster and with more consistency. Great job!",
+          "img": "photo2_testimonials.png"
+        }'
+        ></include>
+
+        <include
+          src="./components/testimonials-card.html"
+          locals='{
+          "name": "Lauren M.",
+          "position": "UI Designer @Boo",
+          "cmt": "I was looking for a way to streamline my design process and the Anima Landing Page UI Kit was a lifesaver! The intuitive design and ease of customisation have saved me hours of time and effort. Highly recommend!",
+          "img": "photo3_testimonials.png"
+        }'
+        ></include>
       </article>
     </div>
   </section>
 
+  <!-- pricing -->
   <section class="pricing">
     <div class="pricing-wrapper">
       <h2 class="pricing-title">Pick Your Perfect Plan</h2>
@@ -217,124 +175,103 @@
         options.
       </p>
       <article class="pricing-cards">
-        <div class="pricing-card">
-          <span class="pricing-card-level">Free</span>
-          <h3 class="pricing-card-cost">
-            <span class="number">$0</span>
-            <span class="text">/month</span>
-          </h3>
-          <p class="pricing-card-desc">Best for Small Teams or Individuals.</p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <button class="pricing-card-btn">
-            Get Started
-            <img src="../assets/icons/arrowRight.svg" alt="arrow" />
-          </button>
-        </div>
-        <div class="pricing-card">
-          <span class="pricing-card-level">Professional</span>
-          <h3 class="pricing-card-cost">
-            <span class="number">$19</span>
-            <span class="text">/month</span>
-          </h3>
-          <p class="pricing-card-desc">Ideal for Growing Companies.</p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <button class="pricing-card-btn">
-            Get Started
-            <img src="../assets/icons/arrowRight.svg" alt="arrow" />
-          </button>
-        </div>
-        <div class="pricing-card">
-          <span class="pricing-card-level">Enterprise</span>
-          <h3 class="pricing-card-cost">
-            <span class="number">$49</span>
-            <span class="text">/month</span>
-          </h3>
-          <p class="pricing-card-desc">Ultimate for Enterprise Solutions.</p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <p class="pricing-card-feature">
-            <img src="../assets/icons/check.svg" alt="check" class="green" />
-            <img
-              src="../assets/icons/checkWhite.svg"
-              alt="check"
-              class="white"
-            />
-            <span class="text">Write feature details here</span>
-          </p>
-          <button class="pricing-card-btn">
-            Get Started
-            <img src="../assets/icons/arrowRight.svg" alt="arrow" />
-          </button>
-        </div>
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Free",
+          "number": "0",
+          "desc": "Best for Small Teams or Individuals."
+        }'
+        ></include>
+
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Professional",
+          "number": "19",
+          "desc": "Ideal for Growing Companies."
+        }'
+        ></include>
+
+        <include
+          src="./components/pricing-card.html"
+          locals='{
+          "level": "Enterprise",
+          "number": "49",
+          "desc": "Ultimate for Enterprise Solutions."
+        }'
+        ></include>
       </article>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section class="team">
+    <div class="team-wrapper">
+      <h2 class="team-title">Meet our team</h2>
+      <p class="team-desc">
+        Get to know the faces behind the scenes and learn about the values that
+        drive us.
+      </p>
+      <article class="team-cards">
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Sarah K.",
+          "position": "UX Designer",
+          "img": "photo1_team.jpg"
+        }'
+        ></include>
+
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Michael L.",
+          "position": "Lead Designer",
+          "img": "photo2_team.jpg"
+        }'
+        ></include>
+
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Lauren M.",
+          "position": "Product Designer",
+          "img": "photo3_team.jpg"
+        }'
+        ></include>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA 2 -->
+  <section class="cta cta2">
+    <div class="cta-wrapper bg">
+      <div class="cta-content">
+        <h2 class="cta-title">Get Landing Page UI Kit Today!</h2>
+        <p class="cta-desc">
+          Break the Figma limits and explore the endless possibilities with
+          Anima.
+        </p>
+        <button type="button" href="javascript:void(0)" class="cta-btn">
+          <a href="javascript:void(0)">
+            Get Started
+            <img src="../assets/icons/arrowRightWhite.svg" alt="arrow" />
+          </a>
+        </button>
+      </div>
+      <figure class="cta-image">
+        <img
+          src="../assets/images/desktop/visuals_CTA2.png"
+          alt="cta"
+          class="desktop"
+        />
+        <img
+          src="../assets/images/tablet/visuals_CTA2.png"
+          alt="cta"
+          class="tablet"
+        />
+      </figure>
     </div>
   </section>
 </main>
