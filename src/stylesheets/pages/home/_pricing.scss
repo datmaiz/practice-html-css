@@ -1,0 +1,130 @@
+@use '../../abstracts/' as *;
+
+.pricing {
+  padding: 12rem 5.5rem;
+}
+
+.pricing-wrapper {
+  text-align: center;
+
+  .pricing-title {
+    @include font(3.8rem, 700);
+  }
+
+  .pricing-desc {
+    @include font(1.6rem, 400);
+    margin-top: 2rem;
+    color: $secondary-black;
+  }
+
+  .pricing-cards {
+    @include between;
+    gap: 3rem;
+  }
+
+  .pricing-card {
+    @include slow;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    border-radius: $primary-radius;
+    text-align: left;
+    padding: 4rem 3rem;
+    box-shadow: 34px 29px 48px 0px $box-shadow-color;
+    cursor: pointer;
+    margin-top: 6rem;
+
+    &-level {
+      @include font(2.1rem, 400);
+      color: $secondary-black;
+      line-height: 3rem;
+    }
+
+    &-cost {
+      display: flex;
+      gap: 1.2rem;
+      align-items: end;
+      margin-top: 6px;
+
+      .number {
+        @include font(5rem, 700);
+      }
+
+      .text {
+        @include font(1.6rem, 700);
+        color: $secondary-black;
+      }
+    }
+
+    &-desc {
+      @include font(1.6rem, 400);
+      line-height: 2.5rem;
+      margin-top: 6px;
+      color: $secondary-black;
+      margin-bottom: 2.4rem;
+    }
+
+    &-feature {
+      @include center-vertical(1.2rem);
+      margin-top: 1.6rem;
+
+      .text {
+        @include font(1.6rem, 700);
+        line-height: 2rem;
+        color: $secondary-black;
+      }
+
+      .white {
+        display: none;
+      }
+    }
+
+    &-btn {
+      @include center-element;
+      @include slow;
+      @include font(1.6rem, 700);
+      border-radius: $primary-radius;
+      background-color: $primary-color-light;
+      color: $primary-color;
+      border: none;
+      cursor: pointer;
+      padding: 1.6rem 5rem;
+      margin-top: 3rem;
+
+      img {
+        opacity: 0;
+        @include slow;
+        margin-left: 8px;
+      }
+    }
+
+    &-btn:hover {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+
+  .pricing-card:hover {
+    background-color: $primary-color;
+
+    * {
+      color: $white;
+    }
+
+    button {
+      background-color: $white;
+      color: $primary-color;
+    }
+
+    .pricing-card-feature {
+      .green {
+        display: none;
+      }
+
+      .white {
+        display: inline-block;
+      }
+    }
+  }
+}

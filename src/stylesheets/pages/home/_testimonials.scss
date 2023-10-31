@@ -1,0 +1,80 @@
+@use '../../abstracts' as *;
+
+.testimonials {
+  padding: 12rem 5.5rem;
+}
+
+.testimonials-wrapper {
+  text-align: center;
+
+  .testi-title {
+    @include font(3.8rem, 700);
+  }
+
+  .testi-desc {
+    @include font(16px, 400);
+    margin-top: 2rem;
+  }
+
+  .testi-cards {
+    @include between;
+    gap: 3rem;
+    margin-top: 6rem;
+  }
+
+  .testi-card {
+    border: 1px solid $primary-color-light;
+    text-align: center;
+    box-shadow: 34px 29px 48px 0px $box-shadow-color;
+    border-radius: $primary-radius;
+    padding: 4rem 3rem;
+    // display: flex;
+    gap: 3rem;
+    // flex-direction: column;
+  }
+
+  .testi-info {
+    @include center-element;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .testi-more {
+    flex: 1;
+  }
+
+  .testi-card-img {
+    flex-shrink: 0;
+  }
+
+  img {
+    display: inline-block;
+  }
+
+  .testi-card-name {
+    @include font(2.1rem, 600);
+    margin-top: 1.6rem;
+    line-height: 2.7rem;
+  }
+
+  .testi-card-position {
+    @include font(1.4rem, 400);
+    margin-top: 6px;
+    color: $neutral-color-light;
+  }
+
+  .testi-card-cmt {
+    @include font(1.6rem, 400);
+    margin-top: 3rem;
+    color: $secondary-black;
+  }
+
+  .stars {
+    &>*:not(:last-child) {
+      margin-right: 5px;
+      margin-top: 3rem;
+    }
+  }
+}
+
+// end
