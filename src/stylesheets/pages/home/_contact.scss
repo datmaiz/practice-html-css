@@ -1,0 +1,98 @@
+@use '../../abstracts/' as *;
+
+.contact {
+  padding: 6rem 5.5rem;
+}
+
+.contact-wrapper {
+  padding: 6rem;
+
+  .contact-title {
+    @include font(3.8rem, 700);
+    line-height: 5rem;
+  }
+
+  .contact-desc {
+    @include font(1.6rem, 400);
+    color: $secondary-black;
+    line-height: 2.4rem;
+    margin-top: 1rem;
+  }
+
+  .contact-info {
+    margin-top: 6rem;
+    @include grid(2, 4rem);
+  }
+
+  .left {
+    @include between;
+    align-items: start;
+    flex-direction: column;
+
+    .details {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .item {
+      @include center-vertical(1.2rem);
+
+      span {
+        @include font(1.6rem, 400);
+        color: $secondary-black;
+      }
+    }
+
+    .title {
+      @include font(2.1rem, 600);
+      margin-bottom: 2rem;
+    }
+
+    .socials {
+      @include center-vertical(1.6rem);
+
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .right {
+    .input {
+      @include center-vertical(0);
+      padding: 2rem;
+      border-radius: $primary-radius;
+      border: 1px solid $grey-border;
+    }
+
+    input {
+      border: none;
+      outline: none;
+      padding-left: 8px;
+      background-color: transparent;
+    }
+
+    img {
+      padding-right: 8px;
+      border-right: 1px solid $primary-color;
+    }
+
+    .input:first-child {
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 1.6rem 5rem;
+      background-color: $primary-color;
+      color: $white;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      border-radius: $primary-radius;
+      margin-top: 2rem;
+    }
+  }
+}
+
+// end
