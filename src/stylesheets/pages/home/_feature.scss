@@ -1,0 +1,85 @@
+@use '../../abstracts' as *;
+
+.feature {
+  background-color: 34px 29px 48px 0px #3366FF0D;
+  padding-inline: 5.5rem;
+}
+
+.feature-wrapper {
+  margin-block: 12rem;
+  @include center-vertical;
+  flex-direction: column;
+
+  .feature-title {
+    @include font(3.8rem, 700);
+  }
+
+  .feature-para {
+    @include font(1.6rem, 400);
+    color: $secondary-black;
+    margin-top: 2rem;
+  }
+}
+
+.feature-cards {
+  @include grid(3, 3rem);
+}
+
+.feature-card {
+  padding: 4rem 3rem;
+  text-align: center;
+  margin-top: 6rem;
+  box-shadow: 34px 29px 48px 0px #3366FF0D;
+
+  .feature-card-icon {
+    padding: 2rem;
+    display: inline-block;
+    position: relative;
+
+    &:before {
+      content: '';
+      inset: 0;
+      position: absolute;
+      background-color: currentColor;
+      border-radius: $primary-radius;
+      opacity: .2;
+    }
+  }
+
+  .feature-card-title {
+    @include font(2.8rem, 600);
+    margin-top: 3rem;
+  }
+
+  .feature-card-desc {
+    @include font(1.6rem, 400);
+    color: $secondary-black;
+    margin-top: 2.4rem;
+  }
+
+  .feature-card-learn {
+    @include center-element;
+    @include font(1.6rem, 600);
+    gap: 8px;
+    color: $primary-color;
+    margin-top: 3rem;
+  }
+}
+
+.feature-card:first-child {
+  .feature-card-icon {
+    color: #FF6250;
+  }
+}
+
+.feature-card:nth-child(2) {
+  .feature-card-icon {
+    color: #009379;
+  }
+}
+
+.feature-card:last-child {
+  .feature-card-icon {
+    color: #F8D57E;
+  }
+}
