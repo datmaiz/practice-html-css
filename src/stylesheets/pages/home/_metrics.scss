@@ -2,6 +2,14 @@
 
 .metrics {
   padding: 12rem 5.5rem;
+
+  @include md {
+    padding: 10rem 3rem;
+  }
+
+  @include resp(400px) {
+    padding: 6rem 2rem;
+  }
 }
 
 .metrics-wrapper {
@@ -14,11 +22,22 @@
     @include font(1.6rem, 400);
     margin-top: 2rem;
     text-align: center;
+    line-height: 2.4rem;
   }
 
   .metrics-cards {
-    @include grid-resp(4, 3rem, 20rem);
+    @include grid(4, 3rem);
     margin-top: 6rem;
+
+    @include md {
+      margin-top: 4rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    @include resp(400px) {
+      gap: 1rem;
+    }
   }
 
   .metrics-card {
@@ -27,15 +46,29 @@
     border-bottom: 4px solid $metrics-card-border;
     text-align: center;
     box-shadow: 34px 29px 48px 0px $box-shadow-color;
+    border-top-left-radius: $primary-radius;
+    border-top-right-radius: $primary-radius;
+
+    @include md {
+      padding: 3rem 1.6rem;
+    }
 
     .metrics-card-number {
       @include font(3.8rem, 700);
       line-height: 4.9rem;
+
+      @include md {
+        font-size: 2.8rem;
+      }
     }
 
     .metrics-card-label {
       @include font(1.6rem, 400);
       margin-top: 5px;
+
+      @include md {
+        line-height: 2rem;
+      }
     }
   }
 }

@@ -1,14 +1,30 @@
 @use '../../abstracts' as *;
 
 .feature {
-  background-color: 34px 29px 48px 0px #3366FF0D;
+  background-color: 34px 29px 48px 0px $box-shadow-color;
   padding-inline: 5.5rem;
+
+  @include lg {
+    padding-inline: 3rem;
+  }
+
+  @include resp(400px) {
+    padding-inline: 2rem;
+  }
 }
 
 .feature-wrapper {
   margin-block: 12rem;
   @include center-vertical;
   flex-direction: column;
+
+  @include lg {
+    margin-block: 10rem;
+  }
+
+  @include sm {
+    margin-block: 6rem;
+  }
 
   .feature-title {
     @include font(3.8rem, 700);
@@ -18,18 +34,36 @@
     @include font(1.6rem, 400);
     color: $secondary-black;
     margin-top: 2rem;
+
+    @include lg {
+      text-align: center;
+      line-height: 2.4rem;
+    }
   }
 }
 
 .feature-cards {
   @include grid(3, 3rem);
+  margin-top: 6rem;
+
+  @include lg {
+    margin-top: 4rem;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  @include sm {
+    margin-top: 3rem;
+    gap: 3rem;
+  }
 }
 
 .feature-card {
   padding: 4rem 3rem;
   text-align: center;
-  margin-top: 6rem;
-  box-shadow: 34px 29px 48px 0px #3366FF0D;
+  box-shadow: 34px 29px 48px 0px $box-shadow-color;
+  border-radius: $primary-radius;
+  border: 1px solid $box-shadow-color;
 
   .feature-card-icon {
     padding: 2rem;
@@ -55,6 +89,10 @@
     @include font(1.6rem, 400);
     color: $secondary-black;
     margin-top: 2.4rem;
+
+    @include lg {
+      line-height: 2.4rem;
+    }
   }
 
   .feature-card-learn {
@@ -63,6 +101,7 @@
     gap: 8px;
     color: $primary-color;
     margin-top: 3rem;
+    cursor: pointer;
   }
 }
 

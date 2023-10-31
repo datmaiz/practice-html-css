@@ -6,6 +6,19 @@
   .header-top {
     @include between;
     padding: 2rem 5rem;
+
+    @include resp(1110px) {
+      padding: 2rem 3rem;
+    }
+
+    @include sm {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @include resp(400px) {
+      padding: 1rem 2rem;
+    }
   }
 
   .header-top-logo {
@@ -15,6 +28,8 @@
       color: $secondary-black;
       font-size: 2.1rem;
     }
+
+    @include sm {}
   }
 
   .header-top-menu {
@@ -27,12 +42,24 @@
     font-weight: 600;
     padding: 2rem 5rem;
     @include center-element(8px);
+
+    @include resp(1110px) {
+      display: none;
+    }
   }
 
   .header-top-menu-item:nth-child(2) {
     .link {
       background-color: #E5F4F2;
       border-radius: $primary-radius;
+
+      @include resp(1110px) {
+        display: flex;
+      }
+
+      @include sm {
+        display: none;
+      }
     }
   }
 
@@ -49,28 +76,63 @@
     padding-inline: 5.5rem;
     @include between;
     margin-block: 12rem;
+
+    @include resp(1110px) {
+      padding: 2rem 3rem;
+      flex-direction: column;
+      gap: 4rem;
+      margin-block: 10rem;
+      justify-content: stretch;
+    }
+
+    @include md {
+      margin-block: 6rem;
+    }
+
+    @include resp(400px) {
+      padding: 1rem 2rem;
+    }
   }
 
   .header-bottom-content {
     max-width: 50%;
     width: 100%;
 
+    @include resp(1110px) {
+      text-align: center;
+      max-width: 100%
+    }
+
     .title {
       @include font(6.7rem, 700);
       line-height: 8.7rem;
+
+      @include md {
+        font-size: 3.8rem;
+        line-height: 5rem;
+      }
     }
 
     .para {
       margin-top: 2rem;
       color: $secondary-black;
       @include font(2.1rem, 400);
-      line-height: 3.1rem
+      line-height: 3.1rem;
+
+      @include md {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
     }
   }
 
   .buttons {
     @include center-vertical(1.8rem);
     margin-top: 4rem;
+
+    @include resp(1110px) {
+      justify-content: center;
+    }
 
     .button {
       @include font(1.6rem, 700);
@@ -88,6 +150,10 @@
       @include slow;
       color: $primary-color;
       border: 1px solid $primary-color;
+
+      @include resp(1110px) {
+        display: none;
+      }
     }
 
     .button:last-child:hover {
@@ -107,6 +173,16 @@
 
     .tablet {
       display: none;
+    }
+
+    @include resp(1110px) {
+      .tablet {
+        display: block;
+      }
+
+      .desktop {
+        display: none;
+      }
     }
   }
 }
