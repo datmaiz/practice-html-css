@@ -1,0 +1,114 @@
+@use '../abstracts' as *;
+
+.header {
+  width: 100%;
+
+  .header-top {
+    @include between;
+    padding: 2rem 5rem;
+  }
+
+  .header-top-logo {
+    @include center-vertical();
+
+    * {
+      color: $secondary-black;
+      font-size: 2.1rem;
+    }
+  }
+
+  .header-top-menu {
+    @include center-vertical(2rem);
+
+  }
+
+  .link {
+    color: $primary-color;
+    font-weight: 600;
+    padding: 2rem 5rem;
+    @include center-element(8px);
+  }
+
+  .header-top-menu-item:nth-child(2) {
+    .link {
+      background-color: #E5F4F2;
+      border-radius: $primary-radius;
+    }
+  }
+
+  .header-top-menu-item:last-child {
+    .link {
+      gap: 8px;
+      background-color: $primary-color;
+      color: $white;
+      border-radius: $primary-radius;
+    }
+  }
+
+  .header-bottom {
+    padding-inline: 5.5rem;
+    @include between;
+    margin-block: 12rem;
+  }
+
+  .header-bottom-content {
+    max-width: 50%;
+    width: 100%;
+
+    .title {
+      @include font(6.7rem, 700);
+      line-height: 8.7rem;
+    }
+
+    .para {
+      margin-top: 2rem;
+      color: $secondary-black;
+      @include font(2.1rem, 400);
+      line-height: 3.1rem
+    }
+  }
+
+  .buttons {
+    @include center-vertical(1.8rem);
+    margin-top: 4rem;
+
+    .button {
+      @include font(1.6rem, 700);
+      padding: 2rem 5rem;
+      border-radius: $primary-radius;
+    }
+
+    .button:first-child {
+      @include center-vertical(8px);
+      background-color: $primary-color;
+      color: #fff;
+    }
+
+    .button:last-child {
+      @include slow;
+      color: $primary-color;
+      border: 1px solid $primary-color;
+    }
+
+    .button:last-child:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  .header-bottom-image {
+
+    // flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .tablet {
+      display: none;
+    }
+  }
+}
+
+// end of footer
