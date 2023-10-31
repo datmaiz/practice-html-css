@@ -60,4 +60,78 @@
       </article>
     </div>
   </section>
+
+  <!-- Metrics -->
+  <section class="metrics">
+    <div class="metrics-wrapper">
+      <h2 class="metrics-title">Our Metrics Tell the Story</h2>
+      <p class="metrics-desc">
+        Our metrics component gives you the inside scoop on your success and
+        helps you stay on top of your game in style.
+      </p>
+      <!-- cards -->
+      <article class="metrics-cards">
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "10k+",
+          "label": "Website launched"
+        }'
+        ></include>
+
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "931k+",
+          "label": "Projects created with Anima"
+        }'
+        ></include>
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "240k+",
+          "label": "New users joined Anima"
+        }'
+        ></include>
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "12k+",
+          "label": "Teams used Anima"
+        }'
+        ></include>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA 1 -->
+  <section class="cta">
+    <div class="cta-wrapper">
+      <figure class="cta-image">
+        <img
+          src="../assets/images/desktop/visuals_CTA1.png"
+          alt="cta"
+          class="desktop"
+        />
+        <img
+          src="../assets/images/tablet/visuals_CTA1.png"
+          alt="cta"
+          class="tablet"
+        />
+      </figure>
+      <div class="cta-content">
+        <h2 class="cta-title">Get Landing Page UI Kit Today!</h2>
+        <p class="cta-desc">
+          Break the Figma limits and explore the endless possibilities with
+          Anima.
+        </p>
+        <button type="button" href="javascript:void(0)" class="cta-btn">
+          <a href="javascript:void(0)">
+            Get Started
+            <img src="../assets/icons/arrowRightWhite.svg" alt="arrow" />
+          </a>
+        </button>
+      </div>
+    </div>
+  </section>
 </main>
