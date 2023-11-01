@@ -2,17 +2,33 @@
 
 .contact {
   padding: 6rem 5.5rem;
+
+  @include lg {
+    padding: 5rem 3rem;
+  }
+
+  @include resp(400px) {
+    padding: 5rem 2rem;
+  }
 }
 
 .contact-wrapper {
   padding: 6rem;
+
+  @include lg {
+    padding: 4rem;
+  }
+
+  @include resp(400px) {
+    padding: 0;
+  }
 
   .contact-title {
     @include font(3.8rem, 700);
     line-height: 5rem;
   }
 
-  .contact-desc {
+  .contact-decs {
     @include font(1.6rem, 400);
     color: $secondary-black;
     line-height: 2.4rem;
@@ -22,6 +38,11 @@
   .contact-info {
     margin-top: 6rem;
     @include grid(2, 4rem);
+
+    @include md {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 4rem;
+    }
   }
 
   .left {
@@ -33,6 +54,7 @@
       display: flex;
       flex-direction: column;
       gap: 2rem;
+      margin-bottom: 4rem;
     }
 
     .item {
@@ -71,6 +93,7 @@
       outline: none;
       padding-left: 8px;
       background-color: transparent;
+      flex: 1;
     }
 
     img {

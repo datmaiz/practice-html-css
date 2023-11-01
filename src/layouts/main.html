@@ -71,25 +71,35 @@
       </p>
       <!-- cards -->
       <article class="metrics-cards">
-        <div class="metrics-card">
-          <h2 class="metrics-card-number">10k+</h2>
-          <p class="metrics-card-label">Website launched</p>
-        </div>
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "10k+",
+          "label": "Website launched"
+        }'
+        ></include>
 
-        <div class="metrics-card">
-          <h2 class="metrics-card-number">931k+</h2>
-          <p class="metrics-card-label">Projects created with Anima</p>
-        </div>
-
-        <div class="metrics-card">
-          <h2 class="metrics-card-number">240k+</h2>
-          <p class="metrics-card-label">New users joined Anima</p>
-        </div>
-
-        <div class="metrics-card">
-          <h2 class="metrics-card-number">12k+</h2>
-          <p class="metrics-card-label">Teams used Anima</p>
-        </div>
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "931k+",
+          "label": "Projects created with Anima"
+        }'
+        ></include>
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "240k+",
+          "label": "New users joined Anima"
+        }'
+        ></include>
+        <include
+          src="./components/metrics-card.html"
+          locals='{
+          "number": "12k+",
+          "label": "Teams used Anima"
+        }'
+        ></include>
       </article>
     </div>
   </section>

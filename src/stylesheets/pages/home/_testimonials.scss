@@ -2,6 +2,14 @@
 
 .testimonials {
   padding: 12rem 5.5rem;
+
+  @include lg {
+    padding: 10rem 3rem;
+  }
+
+  @include resp(400px) {
+    padding: 10rem 2rem;
+  }
 }
 
 .testimonials-wrapper {
@@ -20,6 +28,15 @@
     @include between;
     gap: 3rem;
     margin-top: 6rem;
+
+    @include resp(1028px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    @include sm {
+      gap: 3rem;
+    }
   }
 
   .testi-card {
@@ -28,9 +45,16 @@
     box-shadow: 34px 29px 48px 0px $box-shadow-color;
     border-radius: $primary-radius;
     padding: 4rem 3rem;
-    // display: flex;
     gap: 3rem;
-    // flex-direction: column;
+    flex: 1;
+
+    @include resp(1028px) {
+      display: flex;
+    }
+
+    @include sm {
+      display: block;
+    }
   }
 
   .testi-info {
@@ -41,6 +65,14 @@
 
   .testi-more {
     flex: 1;
+
+    @include resp(1028px) {
+      text-align: left;
+    }
+
+    @include sm {
+      text-align: center;
+    }
   }
 
   .testi-card-img {
