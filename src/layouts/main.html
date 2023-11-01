@@ -214,4 +214,75 @@
       </article>
     </div>
   </section>
+
+  <!-- team -->
+  <section class="team">
+    <div class="team-wrapper">
+      <h2 class="team-title">Meet our team</h2>
+      <p class="team-desc">
+        Get to know the faces behind the scenes and learn about the values that
+        drive us.
+      </p>
+
+      <article class="team-cards">
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Sarah K.",
+          "position": "UX Designer",
+          "img": "photo1_team.jpg"
+        }'
+        ></include>
+
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Michael L.",
+          "position": "Lead Designer",
+          "img": "photo2_team.jpg"
+        }'
+        ></include>
+
+        <include
+          src="./components/team-card.html"
+          locals='{
+          "name": "Lauren M.",
+          "position": "Product Designer",
+          "img": "photo3_team.jpg"
+        }'
+        ></include>
+      </article>
+    </div>
+  </section>
+
+  <!-- CTA 2 -->
+  <section class="cta cta2">
+    <div class="cta-wrapper bg">
+      <div class="cta-content">
+        <h2 class="cta-title">Get Landing Page UI Kit Today!</h2>
+        <p class="cta-desc">
+          Break the Figma limits and explore the endless possibilities with
+          Anima.
+        </p>
+        <button type="button" href="javascript:void(0)" class="cta-btn">
+          <a href="javascript:void(0)">
+            Get Started
+            <img src="../assets/icons/arrowRightWhite.svg" alt="arrow" />
+          </a>
+        </button>
+      </div>
+      <figure class="cta-image">
+        <img
+          src="../assets/images/desktop/visuals_CTA2.png"
+          alt="cta"
+          class="desktop"
+        />
+        <img
+          src="../assets/images/tablet/visuals_CTA2.png"
+          alt="cta"
+          class="tablet"
+        />
+      </figure>
+    </div>
+  </section>
 </main>
