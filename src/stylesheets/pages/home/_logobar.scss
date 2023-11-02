@@ -4,8 +4,21 @@ main {
   width: 100%;
 }
 
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
 .logobar {
   padding: 6rem 5.5rem;
+
+  @include lg {
+    padding: 3rem 4rem;
+  }
+
+  @include resp(400px) {
+    padding: 2rem;
+  }
 
   &-images {
     display: grid;
@@ -15,8 +28,32 @@ main {
     border-top: 1px solid $grey-border;
     border-bottom: 1px solid $grey-border;
 
+    @include lg {
+      padding-block: 3rem;
+    }
+
+    @include resp(710px) {
+      grid-template-columns: repeat(3, max-content);
+      gap: 3rem;
+    }
+
+    @include resp(400px) {
+      padding-bottom: 2rem;
+      gap: 1.5rem;
+    }
+
     .tablet {
       display: none;
+    }
+
+    @include lg {
+      .tablet {
+        display: block;
+      }
+
+      .desktop {
+        display: none;
+      }
     }
   }
 

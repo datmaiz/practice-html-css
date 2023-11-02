@@ -4,6 +4,14 @@
   background-color: $secondary-black;
   padding: 2.4rem 6rem;
 
+  @include lg {
+    padding: 2.4rem 3rem;
+  }
+
+  @include sm {
+    padding: 2.4rem 2rem;
+  }
+
   * {
     color: $white;
   }
@@ -11,6 +19,12 @@
 
 .footer-wrapper {
   @include between;
+
+  @include sm {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    align-items: start;
+  }
 
   .footer-info {
     @include font(1.4rem, 400);

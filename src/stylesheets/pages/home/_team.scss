@@ -2,6 +2,14 @@
 
 .team {
   padding: 12rem 5.5rem;
+
+  @include md {
+    padding: 6rem 3rem;
+  }
+
+  @include resp(400px) {
+    padding: 6rem 2rem;
+  }
 }
 
 .team-wrapper {
@@ -21,12 +29,17 @@
     @include between;
     gap: 3rem;
     margin-top: 6rem;
+
+    @include resp(680px) {
+      flex-direction: column;
+    }
   }
 
   .team-card {
     flex: 1;
     padding-bottom: 3rem;
     border-radius: $primary-radius;
+    box-shadow: 34px 29px 48px 0px $box-shadow-color;
     overflow: hidden;
   }
 
@@ -50,6 +63,7 @@
 
   .team-card-position {
     @include font(1.6rem, 400);
+    color: $secondary-black;
     line-height: 2.5rem;
     margin-top: 5px;
   }

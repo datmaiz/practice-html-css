@@ -2,7 +2,14 @@
 
 .cta {
   padding: 12rem 5.5rem;
-  @include between;
+
+  @include lg {
+    padding: 10rem 3rem;
+  }
+
+  @include resp(400px) {
+    padding: 10rem 2rem;
+  }
 }
 
 .cta-wrapper {
@@ -10,7 +17,16 @@
   width: 100%;
   gap: 6rem;
 
+  @include lg {
+    gap: 2rem;
+  }
+
+  @include resp(745px) {
+    flex-direction: column;
+  }
+
   .cta-image {
+    min-width: 32rem;
 
     img {
       width: 100%;
@@ -20,6 +36,20 @@
 
     .tablet {
       display: none;
+    }
+
+    @include lg {
+      .tablet {
+        display: block;
+      }
+
+      .desktop {
+        display: none;
+      }
+    }
+
+    @include resp(400px) {
+      min-width: 0;
     }
   }
 
@@ -53,12 +83,41 @@
         display: inline-block;
       }
     }
+
+    @include lg {
+      .cta-title {
+        font-size: 3.8rem;
+        line-height: 5rem;
+      }
+
+      .cta-desc {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+      }
+    }
+
+    @include resp(745px) {
+      text-align: center;
+
+      .cta-title {
+        font-size: 2.8rem;
+        line-height: 3.6rem;
+      }
+    }
   }
 }
 
 .cta2 {
   .cta-content {
     padding: 6rem;
+
+    @include lg {
+      padding: 4rem 3rem;
+    }
+
+    @include resp(400px) {
+      padding: 2rem;
+    }
   }
 }
 
