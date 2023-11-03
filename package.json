@@ -2,7 +2,7 @@
   "name": "practice-html-css",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "dev": "parcel src/pages/index.html",
     "prepare": "husky install",
