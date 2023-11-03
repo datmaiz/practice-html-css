@@ -51,6 +51,8 @@
   }
 
   .team-card-img {
+    overflow: hidden;
+
     img {
       @include slow;
       width: 100%;

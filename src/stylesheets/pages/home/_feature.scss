@@ -93,12 +93,34 @@
   }
 
   .feature-card-learn {
-    @include center-element;
     @include font(1.6rem, 600);
+    @include slow;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    border-radius: $primary-radius;
     gap: 8px;
     color: $primary-color;
     margin-top: 3rem;
     cursor: pointer;
+
+    .icon-white {
+      display: none;
+    }
+  }
+
+  .feature-card-learn:hover {
+    background-color: $primary-color;
+    color: $white;
+
+    .icon-green {
+      display: none;
+    }
+
+    .icon-white {
+      display: inline-block;
+    }
   }
 }
 
