@@ -1,6 +1,7 @@
 @use '../../abstracts' as *;
 
 .feature {
+<<<<<<< Updated upstream
   background-color: 34px 29px 48px 0px $box-shadow-color;
   padding-inline: 5.5rem;
 
@@ -10,6 +11,16 @@
 
   @include resp(400px) {
     padding-inline: 2rem;
+=======
+  padding-block: 12rem;
+
+  @include lg {
+    padding-block: 10rem;
+  }
+
+  @include resp(400px) {
+    padding-block: 6rem;
+>>>>>>> Stashed changes
   }
 }
 

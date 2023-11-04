@@ -10,14 +10,14 @@ main {
 }
 
 .logobar {
-  padding: 6rem 5.5rem;
+  padding-block: 6rem;
 
   @include lg {
-    padding: 3rem 4rem;
+    padding-block: 3rem;
   }
 
   @include resp(400px) {
-    padding: 2rem;
+    padding-block: 2rem;
   }
 
   &-images {

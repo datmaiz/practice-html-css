@@ -1,14 +1,14 @@
 @use '../../abstracts/' as *;
 
 .contact {
-  padding: 6rem 5.5rem;
+  padding-block: 6rem;
 
   @include lg {
-    padding: 5rem 3rem;
+    padding-block: 5rem;
   }
 
-  @include resp(400px) {
-    padding: 5rem 2rem;
+  @include sm {
+    padding-block: 3rem;
   }
 }
 
