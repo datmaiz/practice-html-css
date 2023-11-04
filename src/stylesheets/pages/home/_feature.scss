@@ -7,23 +7,14 @@
     padding-block: 10rem;
   }
 
-  @include resp(400px) {
+  @include sm {
     padding-block: 6rem;
   }
 }
 
 .feature-wrapper {
-  margin-block: 12rem;
   @include center-vertical;
   flex-direction: column;
-
-  @include lg {
-    margin-block: 10rem;
-  }
-
-  @include sm {
-    margin-block: 6rem;
-  }
 
   .feature-title {
     @include font(3.8rem, 700);
@@ -58,11 +49,17 @@
 }
 
 .feature-card {
+  @include slow;
   padding: 4rem 3rem;
   text-align: center;
   box-shadow: 34px 29px 48px 0px $box-shadow-color;
   border-radius: $primary-radius;
   border: 1px solid $box-shadow-color;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   .feature-card-icon {
     padding: 2rem;
@@ -95,12 +92,33 @@
   }
 
   .feature-card-learn {
-    @include center-element;
+    display: inline-flex;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    border-radius: $primary-radius;
     @include font(1.6rem, 600);
+    @include slow;
     gap: 8px;
     color: $primary-color;
     margin-top: 3rem;
     cursor: pointer;
+  }
+
+  .white-icon {
+    display: none;
+  }
+
+  .feature-card-learn:hover {
+    color: $white;
+    background-color: $primary-color;
+
+    .white-icon {
+      display: inline-block;
+    }
+
+    .green-icon {
+      display: none;
+    }
   }
 }
 

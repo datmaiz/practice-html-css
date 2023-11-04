@@ -29,6 +29,12 @@
     }
   }
 
+  nav {
+    @include sm {
+      display: none;
+    }
+  }
+
   .header-top-logo {
     @include center-vertical();
 
