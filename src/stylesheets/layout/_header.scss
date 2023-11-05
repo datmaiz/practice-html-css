@@ -46,6 +46,12 @@
     @include sm {}
   }
 
+  nav {
+    @include sm {
+      display: none;
+    }
+  }
+
   .header-top-menu {
     @include center-vertical(2rem);
 

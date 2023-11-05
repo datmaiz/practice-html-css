@@ -102,6 +102,23 @@
     color: $primary-color;
     margin-top: 3rem;
     cursor: pointer;
+
+    .icon-white {
+      display: none;
+    }
+  }
+
+  .feature-card-learn:hover {
+    background-color: $primary-color;
+    color: $white;
+
+    .icon-green {
+      display: none;
+    }
+
+    .icon-white {
+      display: inline-block;
+    }
   }
 
   .white-icon {
