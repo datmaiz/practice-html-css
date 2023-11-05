@@ -121,6 +121,10 @@
 .cta2 {
   padding-block: 6rem;
 
+  .cta-wrapper {
+    gap: 0;
+  }
+
   @include lg {
     padding-block: 5rem;
   }
