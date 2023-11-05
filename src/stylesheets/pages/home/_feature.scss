@@ -2,29 +2,20 @@
 
 .feature {
   background-color: 34px 29px 48px 0px $box-shadow-color;
-  padding-inline: 5.5rem;
+  padding: 12rem 5.5rem;
 
   @include lg {
-    padding-inline: 3rem;
+    padding: 10rem 3rem;
   }
 
   @include resp(400px) {
-    padding-inline: 2rem;
+    padding: 6rem 2rem;
   }
 }
 
 .feature-wrapper {
-  margin-block: 12rem;
   @include center-vertical;
   flex-direction: column;
-
-  @include lg {
-    margin-block: 10rem;
-  }
-
-  @include sm {
-    margin-block: 6rem;
-  }
 
   .feature-title {
     @include font(3.8rem, 700);
@@ -59,11 +50,17 @@
 }
 
 .feature-card {
+  @include slow;
   padding: 4rem 3rem;
   text-align: center;
   box-shadow: 34px 29px 48px 0px $box-shadow-color;
   border-radius: $primary-radius;
   border: 1px solid $box-shadow-color;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 
   .feature-card-icon {
     padding: 2rem;
@@ -96,12 +93,34 @@
   }
 
   .feature-card-learn {
-    @include center-element;
     @include font(1.6rem, 600);
+    @include slow;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 5rem;
+    border-radius: $primary-radius;
     gap: 8px;
     color: $primary-color;
     margin-top: 3rem;
     cursor: pointer;
+
+    .icon-white {
+      display: none;
+    }
+  }
+
+  .feature-card-learn:hover {
+    background-color: $primary-color;
+    color: $white;
+
+    .icon-green {
+      display: none;
+    }
+
+    .icon-white {
+      display: inline-block;
+    }
   }
 }
 

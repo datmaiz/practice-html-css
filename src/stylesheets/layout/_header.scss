@@ -32,6 +32,12 @@
     @include sm {}
   }
 
+  nav {
+    @include sm {
+      display: none;
+    }
+  }
+
   .header-top-menu {
     @include center-vertical(2rem);
 
@@ -73,9 +79,8 @@
   }
 
   .header-bottom {
-    padding-inline: 5.5rem;
+    padding: 12rem 5.5rem;
     @include between;
-    margin-block: 12rem;
 
     @include resp(1110px) {
       padding: 2rem 3rem;
