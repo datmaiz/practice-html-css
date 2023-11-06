@@ -1,19 +1,20 @@
 @use '../../abstracts' as *;
 
 .cta {
-  padding: 12rem 5.5rem;
+  padding-block: 12rem;
 
   @include lg {
-    padding: 10rem 3rem;
+    padding-block: 10rem;
   }
 
-  @include resp(400px) {
-    padding: 10rem 2rem;
+  @include sm {
+    padding-block: 6rem;
   }
 }
 
 .cta-wrapper {
-  @include between;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   gap: 6rem;
 
@@ -31,10 +32,10 @@
     img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
     }
 
-    .tablet {
+    .tablet,
+    .mobile {
       display: none;
     }
 
@@ -45,6 +46,16 @@
 
       .desktop {
         display: none;
+      }
+    }
+
+    @include resp(745px) {
+      .tablet {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
       }
     }
 
@@ -108,15 +119,25 @@
 }
 
 .cta2 {
+  padding-block: 6rem;
+
+  .cta-wrapper {
+    gap: 0;
+  }
+
+  @include lg {
+    padding-block: 5rem;
+  }
+
+  @include sm {
+    padding-block: 3rem;
+  }
+
   .cta-content {
     padding: 6rem;
 
     @include lg {
-      padding: 4rem 3rem;
-    }
-
-    @include resp(400px) {
-      padding: 2rem;
+      padding: 3rem 4rem;
     }
   }
 }

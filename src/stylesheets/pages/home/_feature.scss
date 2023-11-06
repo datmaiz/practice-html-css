@@ -1,15 +1,14 @@
 @use '../../abstracts' as *;
 
 .feature {
-  background-color: 34px 29px 48px 0px $box-shadow-color;
-  padding: 12rem 5.5rem;
+  padding-block: 12rem;
 
   @include lg {
-    padding: 10rem 3rem;
+    padding-block: 10rem;
   }
 
-  @include resp(400px) {
-    padding: 6rem 2rem;
+  @include sm {
+    padding-block: 6rem;
   }
 }
 
@@ -93,13 +92,12 @@
   }
 
   .feature-card-learn {
-    @include font(1.6rem, 600);
-    @include slow;
     display: inline-flex;
-    justify-content: center;
     align-items: center;
     padding: 1.6rem 5rem;
     border-radius: $primary-radius;
+    @include font(1.6rem, 600);
+    @include slow;
     gap: 8px;
     color: $primary-color;
     margin-top: 3rem;
@@ -120,6 +118,23 @@
 
     .icon-white {
       display: inline-block;
+    }
+  }
+
+  .white-icon {
+    display: none;
+  }
+
+  .feature-card-learn:hover {
+    color: $white;
+    background-color: $primary-color;
+
+    .white-icon {
+      display: inline-block;
+    }
+
+    .green-icon {
+      display: none;
     }
   }
 }

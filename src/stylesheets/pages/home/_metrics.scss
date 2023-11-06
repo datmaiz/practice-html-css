@@ -1,14 +1,14 @@
 @use '../../abstracts' as *;
 
 .metrics {
-  padding: 12rem 5.5rem;
+  padding-block: 12rem;
 
   @include md {
-    padding: 10rem 3rem;
+    padding-block: 10rem;
   }
 
   @include resp(400px) {
-    padding: 6rem 2rem;
+    padding-block: 6rem;
   }
 }
 

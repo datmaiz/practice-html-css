@@ -1,23 +1,37 @@
 @use '../abstracts' as *;
 
+.body-content {
+  padding-inline: 5.5rem;
+
+  @include lg {
+    padding-inline: 3rem;
+  }
+
+  @include sm {
+    padding-inline: 2rem;
+  }
+
+  @include resp(400px) {
+    padding-inline: 1rem;
+  }
+}
+
 .header {
   width: 100%;
 
   .header-top {
     @include between;
-    padding: 2rem 5rem;
-
-    @include resp(1110px) {
-      padding: 2rem 3rem;
-    }
+    padding-block: 2rem;
 
     @include sm {
       justify-content: center;
       padding: 2rem;
     }
+  }
 
-    @include resp(400px) {
-      padding: 1rem 2rem;
+  nav {
+    @include sm {
+      display: none;
     }
   }
 
@@ -79,23 +93,18 @@
   }
 
   .header-bottom {
-    padding: 12rem 5.5rem;
     @include between;
+    padding-block: 12rem;
 
     @include resp(1110px) {
-      padding: 2rem 3rem;
       flex-direction: column;
       gap: 4rem;
-      margin-block: 10rem;
+      padding-block: 10rem;
       justify-content: stretch;
     }
 
     @include md {
-      margin-block: 6rem;
-    }
-
-    @include resp(400px) {
-      padding: 1rem 2rem;
+      padding-block: 6rem;
     }
   }
 
