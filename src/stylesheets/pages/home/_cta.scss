@@ -34,6 +34,11 @@
       height: 100%;
     }
 
+    .mobile {
+      max-width: 32rem;
+      margin-inline: auto;
+    }
+
     .tablet,
     .mobile {
       display: none;
