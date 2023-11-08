@@ -30,33 +30,13 @@
     min-width: 32rem;
 
     img {
-      width: 100%;
+      margin-inline: auto;
       height: 100%;
     }
 
-    .tablet,
     .mobile {
-      display: none;
-    }
-
-    @include lg {
-      .tablet {
-        display: block;
-      }
-
-      .desktop {
-        display: none;
-      }
-    }
-
-    @include resp(745px) {
-      .tablet {
-        display: none;
-      }
-
-      .mobile {
-        display: block;
-      }
+      max-width: 32rem;
+      margin-inline: auto;
     }
 
     @include resp(400px) {

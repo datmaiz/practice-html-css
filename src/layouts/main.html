@@ -5,7 +5,7 @@
       <include
         src="./components/logo.html"
         locals='{
-          "list": "[`../assets/images/desktop/airbnb.png`, `../assets/images/desktop/google.png`, `../assets/images/desktop/amazone.png`, `../assets/images/desktop/microsoft.png`, `../assets/images/desktop/fedex.png`, `../assets/images/desktop/hubspot.png`]",
+          "list": "[`desktop/airbnb.png`, `desktop/google.png`, `desktop/amazone.png`, `desktop/microsoft.png`, `desktop/fedex.png`, `desktop/hubspot.png`]",
           "className": "desktop"
         }'
       >
@@ -14,7 +14,7 @@
       <include
         src="./components/logo.html"
         locals='{
-          "list": "[`../assets/images/tablet/airbnb.png`, `../assets/images/tablet/google.png`, `../assets/images/tablet/amazon.png`, `../assets/images/tablet/microsoft.png`, `../assets/images/tablet/fedex.png`, `../assets/images/tablet/hubspot.png`]",
+          "list": "[`tablet/airbnb.png`, `tablet/google.png`, `tablet/amazon.png`, `tablet/microsoft.png`, `tablet/fedex.png`, `tablet/hubspot.png`]",
           "className": "tablet"
         }'
       >
@@ -108,7 +108,7 @@
   <section class="cta">
     <div class="cta-wrapper">
       <figure class="cta-image">
-        <img
+        <!-- <img
           src="../assets/images/desktop/visuals_CTA1.png"
           alt="cta"
           class="desktop"
@@ -118,6 +118,22 @@
           alt="cta"
           class="tablet"
         />
+        <img
+          src="../assets/images/mobile/visuals_CTA1.png"
+          alt="cta"
+          class="mobile"
+        /> -->
+        <picture>
+          <source
+            media="(max-width: 992px)"
+            srcset="../assets/images/tablet/visuals_CTA1.png"
+          />
+          <img
+            src="../assets/images/desktop/visuals_CTA1.png"
+            alt="cta"
+            class="desktop"
+          />
+        </picture>
       </figure>
       <div class="cta-content">
         <h2 class="cta-title">Get Landing Page UI Kit Today!</h2>
@@ -271,21 +287,32 @@
         </button>
       </div>
       <figure class="cta-image">
-        <img
+        <!-- <img
           src="../assets/images/desktop/visuals_CTA2.png"
           alt="cta"
           class="desktop"
         />
         <img
-          src="../assets/images/tablet/visuals_CTA2.png"
-          alt="cta"
-          class="tablet"
+        src="../assets/images/tablet/visuals_CTA2.png"
+        alt="cta"
+        class="tablet"
         />
         <img
-          src="../assets/images/mobile/visuals_CTA2.png"
-          alt="cta"
+        src="../assets/images/mobile/visuals_CTA2.png"
+        alt="cta"
           class="mobile"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width: 992px)"
+            srcset="../assets/images/tablet/visuals_CTA2.png"
+          />
+          <source
+            media="(max-width: 745px)"
+            srcset="../assets/images/mobile/visuals_CTA2.png"
+          />
+          <img src="../assets/images/desktop/visuals_CTA2.png" alt="cta" />
+        </picture>
       </figure>
     </div>
   </section>

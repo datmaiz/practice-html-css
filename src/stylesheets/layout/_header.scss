@@ -184,20 +184,6 @@
       height: 100%;
       object-fit: cover;
     }
-
-    .tablet {
-      display: none;
-    }
-
-    @include resp(1110px) {
-      .tablet {
-        display: block;
-      }
-
-      .desktop {
-        display: none;
-      }
-    }
   }
 }
 
