@@ -108,7 +108,7 @@
   <section class="cta">
     <div class="cta-wrapper">
       <figure class="cta-image">
-        <img
+        <!-- <img
           src="../assets/images/desktop/visuals_CTA1.png"
           alt="cta"
           class="desktop"
@@ -119,10 +119,21 @@
           class="tablet"
         />
         <img
-          src="../assets/images/tablet/visuals_CTA1.png"
+          src="../assets/images/mobile/visuals_CTA1.png"
           alt="cta"
           class="mobile"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width: 992px)"
+            srcset="../assets/images/tablet/visuals_CTA1.png"
+          />
+          <img
+            src="../assets/images/desktop/visuals_CTA1.png"
+            alt="cta"
+            class="desktop"
+          />
+        </picture>
       </figure>
       <div class="cta-content">
         <h2 class="cta-title">Get Landing Page UI Kit Today!</h2>
@@ -276,21 +287,32 @@
         </button>
       </div>
       <figure class="cta-image">
-        <img
+        <!-- <img
           src="../assets/images/desktop/visuals_CTA2.png"
           alt="cta"
           class="desktop"
         />
         <img
-          src="../assets/images/tablet/visuals_CTA2.png"
-          alt="cta"
-          class="tablet"
+        src="../assets/images/tablet/visuals_CTA2.png"
+        alt="cta"
+        class="tablet"
         />
         <img
-          src="../assets/images/mobile/visuals_CTA2.png"
-          alt="cta"
+        src="../assets/images/mobile/visuals_CTA2.png"
+        alt="cta"
           class="mobile"
-        />
+        /> -->
+        <picture>
+          <source
+            media="(max-width: 992px)"
+            srcset="../assets/images/tablet/visuals_CTA2.png"
+          />
+          <source
+            media="(max-width: 745px)"
+            srcset="../assets/images/mobile/visuals_CTA2.png"
+          />
+          <img src="../assets/images/desktop/visuals_CTA2.png" alt="cta" />
+        </picture>
       </figure>
     </div>
   </section>
