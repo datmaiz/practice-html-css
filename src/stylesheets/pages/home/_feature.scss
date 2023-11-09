@@ -50,6 +50,8 @@
 
 .feature-card {
   @include slow;
+  @include center-element;
+  flex-direction: column;
   padding: 4rem 3rem;
   text-align: center;
   box-shadow: 34px 29px 48px 0px $box-shadow-color;
@@ -65,6 +67,7 @@
     padding: 2rem;
     display: inline-block;
     position: relative;
+    align-self: center;
 
     &:before {
       content: '';
@@ -78,11 +81,14 @@
 
   .feature-card-title {
     @include font(2.8rem, 600);
+    @include limitText(1);
     margin-top: 3rem;
   }
 
   .feature-card-desc {
     @include font(1.6rem, 400);
+    @include limitText(4);
+    flex: 1;
     color: $secondary-black;
     margin-top: 2.4rem;
 
@@ -93,6 +99,7 @@
 
   .feature-card-learn {
     display: inline-flex;
+    margin-top: auto;
     align-items: center;
     padding: 1.6rem 5rem;
     border-radius: $primary-radius;
