@@ -43,3 +43,12 @@
   grid-template-columns: repeat(auto-fit, minmax($min-width, 1fr));
   gap: $gap;
 }
+
+@mixin limitText($cols: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $cols;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

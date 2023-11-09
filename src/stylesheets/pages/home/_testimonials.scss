@@ -26,6 +26,7 @@
 
   .testi-cards {
     @include between;
+    align-items: stretch;
     gap: 3rem;
     margin-top: 6rem;
 
@@ -41,12 +42,13 @@
 
   .testi-card {
     @include slow;
+    @include center-element;
+    flex-direction: column;
     border: 1px solid $primary-color-light;
     text-align: center;
     box-shadow: 34px 29px 48px 0px $box-shadow-color;
     border-radius: $primary-radius;
     padding: 4rem 3rem;
-    gap: 3rem;
     flex: 1;
     cursor: pointer;
 
@@ -64,13 +66,13 @@
   }
 
   .testi-info {
-    @include center-element;
+    @include center-horizontal(0);
     flex-direction: column;
-    flex: 1;
   }
 
   .testi-more {
     flex: 1;
+    align-self: flex-start;
 
     @include resp(1028px) {
       text-align: left;
@@ -103,11 +105,15 @@
 
   .testi-card-cmt {
     @include font(1.6rem, 400);
+    @include limitText(6);
     margin-top: 3rem;
     color: $secondary-black;
   }
 
   .stars {
+    margin-top: auto;
+    text-align: center;
+
     &>*:not(:last-child) {
       margin-right: 5px;
       margin-top: 3rem;
